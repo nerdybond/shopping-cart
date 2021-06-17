@@ -15,6 +15,7 @@ export const Wrapper = styled.div`
         justify-content: space-between;
     }
     img{
+        max-height: 50px;
         max-width: 40px;
         object-fit: cover;
         margin-top: 10px;

@@ -1,40 +1,38 @@
 import CartItem from "../CartItem/CartItem";
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Switch from '@material-ui/core/Switch';
+import React, { useState } from 'react';
+import Cart from "../Cart/Cart";
+import App from "../App";
 
-// //Styles
-// import { Wrapper } from "../App.styles";
+//Styles
+import { Wrapper } from "../App.styles";
+import ProductGrid from "../App";
 
-// //Types
-// import { CartItemType } from "../App";
+//Types
+import { Grid } from "@material-ui/core";
+import Item from "../Item/Item";
 
 
-// type Props = {
-//     cartItems: CartItemType[];
-//     addToCart: (clickedItem: CartItemType) => void;
-//     removeFromCart: (id: number) => void;
-// }
+const Home: React.FC<any> = ({}) =>
+{
+    const [checked, setChecked] = React.useState(false);
+    const toggleChecked = () => {
+    setChecked((prev) => !prev);
+};
 
-// const Cart: React.FC<Props> = ({cartItems, addToCart, removeFromCart}) =>
-// {
-// const calculateTotal = (items: CartItemType[]) =>
-// items.reduce((ack: number, item) => ack + item.amount * item.price, 0)
 
-// return(
-//     <Wrapper>
-//         <h2>Cart</h2>
-//         {cartItems.length === 0 ? <p>No items in cart.</p>: null}
-//         {cartItems.map(item => (
-//             <CartItem
-//             key = {item.id}
-//             item = {item}
-//             addToCart = {addToCart}
-//             removeFromCart = {removeFromCart}
-//             />
-//         ))}
-//         <h2>${calculateTotal(cartItems).toFixed(2)}</h2>
-//         <h2>Buy Now</h2>
-//         </Wrapper>
-// );
+return(
+<Wrapper>
+      <h2>Products</h2>
 
-// };
-//Change all this!
-export default CartItem;
+      <p>This is where the filters will be going.</p>
+        
+        <ProductGrid/>
+        
+    </Wrapper>
+
+);
+
+};
+export default Home;
