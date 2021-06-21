@@ -17,7 +17,9 @@ return(
         
         <div className = "orderConfirm">
         <div className = "circle"><StarOutlineOutlinedIcon /></div>
+
         <h2>Your order has been processed</h2>
+        <br/><br/>
         <p>Your order ID is <strong>#ITERATIVE NUMBER#</strong></p>
         </div>
         

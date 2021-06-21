@@ -18,7 +18,7 @@ const CartItem: React.FC<Props>= ({item, removeFromCart}) => (
 <Wrapper>
     <div>
     <img src = {item.image}></img>
-    <h3>{item.title}</h3>
+    <h3>{item.description}</h3>
     <div className = 'information'>
 <p>Price: $ {item.price} </p>
     <div className = 'button'>

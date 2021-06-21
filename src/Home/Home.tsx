@@ -24,15 +24,17 @@ const Home: React.FC<any> = ({}) =>
 
 return(
 <Wrapper>
-      <h2>Products</h2>
-
-      <p>This is where the filters will be going.</p>
-        
-        <ProductGrid/>
+      
+      
+      
         
     </Wrapper>
 
 );
+//Will make Drawer into 'Item added to cart. And will move drawer code to new page.'
+/*
+
+*/
 
 };
 export default Home;

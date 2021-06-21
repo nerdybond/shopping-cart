@@ -19,6 +19,17 @@ const Cart: React.FC<Props> = ({cartItems, addToCart, removeFromCart}) =>
 const calculateTotal = (items: CartItemType[]) =>
 items.reduce((ack: number, item) => ack + item.amount * item.price, 0)
 
+
+/*
+      <Drawer anchor='right' open={cartOpen} onClose={() => setCartOpen(false)}>
+        <Cart
+          cartItems={cartItems}
+          addToCart={handleAddToCart}
+          removeFromCart={handleRemoveFromCart}
+        />
+      </Drawer>
+*/
+
 return(
     <Wrapper>
         <h2>Cart</h2>
@@ -35,6 +46,5 @@ return(
         <h2>Buy Now</h2>
         </Wrapper>
 );
-
 };
 export default Cart;
